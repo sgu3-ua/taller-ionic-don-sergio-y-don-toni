@@ -17,4 +17,5 @@ import { exitPageRoutingModule } from './exit-routing.module';
   ],
   declarations: [exitPage]
 })
-export class exitPageModule {}
+export class exitPageModule {
+}
