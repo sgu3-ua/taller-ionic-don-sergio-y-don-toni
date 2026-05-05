@@ -10,4 +10,5 @@ export class wikiPage {
 
   constructor() {}
 
+  readonly categories:string [] = ["People", "Planets", "Species", "Starships"];
 }
