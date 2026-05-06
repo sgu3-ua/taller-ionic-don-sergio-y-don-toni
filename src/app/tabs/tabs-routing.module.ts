@@ -20,6 +20,10 @@ const routes: Routes = [
         loadChildren: () => import('../exit/exit.module').then(m => m.exitPageModule)
       },
       {
+        path: 'favorites',
+        loadChildren: () => import('../favorites/favorites.module').then( m => m.favoritesPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/wiki',
         pathMatch: 'full'
@@ -30,7 +34,12 @@ const routes: Routes = [
     path: '',
     redirectTo: '/tabs/wiki',
     pathMatch: 'full'
+  },
+  {
+    path: 'favorites',
+    loadChildren: () => import('../favorites/favorites.module').then( m => m.favoritesPageModule)
   }
+
 ];
 
 @NgModule({
