@@ -12,6 +12,14 @@
       <ion-title size="large">Exit</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Exit page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Exit</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Are you sure you want to exit the app?</p>
+      <ion-button expand="block" class="primary" (click)="exitApp()">Exit App</ion-button>
+      <ion-button expand="block" class="danger" (click)="cancelExit()">Cancel</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
