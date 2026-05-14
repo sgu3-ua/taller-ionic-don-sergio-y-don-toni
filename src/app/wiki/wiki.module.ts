@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { wikiPage } from './wiki.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
+import { CategoryComponent } from '../category/category.component';
 
 import { wikiPageRoutingModule } from './wiki-routing.module';
 
@@ -15,6 +16,6 @@ import { wikiPageRoutingModule } from './wiki-routing.module';
     ExploreContainerComponentModule,
     wikiPageRoutingModule
   ],
-  declarations: [wikiPage]
+  declarations: [wikiPage, CategoryComponent]
 })
 export class wikiPageModule {}

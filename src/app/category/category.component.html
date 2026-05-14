@@ -1,0 +1,18 @@
+<ion-item>
+  <ion-avatar slot="start">
+    <img [src]="'../../assets/images/categories/' + theCategory.image"/>
+  </ion-avatar>
+  <ion-label>
+    <h2>{{ theCategory.name }}</h2>
+  </ion-label>
+  <ion-button float-right (click)="click()">
+    <ion-icon slot="icon-only" name="eye"></ion-icon>
+  </ion-button>
+</ion-item>
+<ion-item *ngIf="selected">
+  <ion-list>
+    <ion-item>Article 1</ion-item>
+    <ion-item>Article 2</ion-item>
+    <ion-item>Article 3</ion-item>
+  </ion-list>
+</ion-item>
