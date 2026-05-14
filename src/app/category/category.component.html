@@ -11,8 +11,8 @@
 </ion-item>
 <ion-item *ngIf="selected">
   <ion-list>
-    <ion-item>Article 1</ion-item>
-    <ion-item>Article 2</ion-item>
-    <ion-item>Article 3</ion-item>
+    <ion-item *ngFor="let article of articles">
+      <p [id]="article.uid">{{ article.name }}</p>
+    </ion-item>
   </ion-list>
 </ion-item>

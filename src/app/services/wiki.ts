@@ -11,6 +11,7 @@ export class Wiki {
   constructor(private http: HttpClient) {}
 
   getAllArticles(category: string): Observable<any> {
+    console.log(`Fetching articles for category: ${category}`);
     return this.http.get<any>(`${this.apiUrl}${category}/`);
   }
 }

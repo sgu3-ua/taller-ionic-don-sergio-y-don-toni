@@ -5,7 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { wikiPage } from './wiki.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 import { CategoryComponent } from '../category/category.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { Wiki as WikiService } from '../services/wiki';
 import { wikiPageRoutingModule } from './wiki-routing.module';
 
 @NgModule({
@@ -14,8 +15,10 @@ import { wikiPageRoutingModule } from './wiki-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    wikiPageRoutingModule
+    wikiPageRoutingModule,
+    HttpClientModule
   ],
+  providers: [WikiService],
   declarations: [wikiPage, CategoryComponent]
 })
 export class wikiPageModule {}
