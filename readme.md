@@ -7,9 +7,15 @@ Antonio Mainar Sánchez
  - About
  - Favorites
  - Mensaje bienvenida 
- - Exit
+ - Exit  
 Preguntas a IA sobre como realizar ciertas funcionalidades, añadir página, mensaje de bienvenida y salir del programa.
 ### Antonio
  - Inicializar ionic
  - Wiki
  - Iconos
+## Taller 2
+### Sergio
+ - Parte 2  
+Programación siguiendo el guion  
+### Antonio
+ - Parte 1
