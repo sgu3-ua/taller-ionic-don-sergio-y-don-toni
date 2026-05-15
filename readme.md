@@ -13,9 +13,11 @@ Preguntas a IA sobre como realizar ciertas funcionalidades, añadir página, men
  - Inicializar ionic
  - Wiki
  - Iconos
+Hecho siguiendo lo que se indica en la práctica, sólo se ha usado IA para alguna duda puntual como algún problema a la hora de mostrar las categorías en la página wiki.
 ## Taller 2
 ### Sergio
  - Parte 2  
-Programación siguiendo el guion  
+Programación siguiendo el guión.
 ### Antonio
  - Parte 1
+Programación siguiendo el guión con alguna duda para problemas de imports o con el standalone.
