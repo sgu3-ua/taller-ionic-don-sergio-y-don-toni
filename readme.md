@@ -20,4 +20,4 @@ Hecho siguiendo lo que se indica en la práctica, sólo se ha usado IA para algu
 Programación siguiendo el guión.
 ### Antonio
  - Parte 1
-Programación siguiendo el guión con alguna duda para problemas de imports o con el standalone.
+Programación siguiendo el guión, uso de IA alguna duda para problemas de imports o con el standalone.
