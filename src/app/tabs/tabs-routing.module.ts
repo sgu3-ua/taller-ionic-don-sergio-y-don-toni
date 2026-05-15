@@ -4,7 +4,7 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
     component: TabsPage,
     children: [
       {
@@ -25,21 +25,11 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/wiki',
+        redirectTo: 'wiki',
         pathMatch: 'full'
       }
     ]
   },
-  {
-    path: '',
-    redirectTo: '/tabs/wiki',
-    pathMatch: 'full'
-  },
-  {
-    path: 'favorites',
-    loadChildren: () => import('../favorites/favorites.module').then( m => m.favoritesPageModule)
-  }
-
 ];
 
 @NgModule({

@@ -14,4 +14,8 @@ export class Wiki {
     console.log(`Fetching articles for category: ${category}`);
     return this.http.get<any>(`${this.apiUrl}${category}/`);
   }
+
+  public getArticle(category: string, id: string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}${category}/${id}/`);
+  }
 }
