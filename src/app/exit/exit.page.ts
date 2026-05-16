@@ -16,12 +16,6 @@ export class exitPage {
 
   exitApp() {
 
-    // Cordova
-    if (navigator && (navigator as any).app && (navigator as any).app.exitApp) {
-      (navigator as any).app.exitApp();
-      return;
-    }
-
     //Capacitor
     try {
       if (this.platform.is('android') && CapacitorApp && (CapacitorApp as any).exitApp) {
@@ -31,7 +25,13 @@ export class exitPage {
     } catch (e) {
 
     }
-    
+
+    // Cordova
+    if (navigator && (navigator as any).app && (navigator as any).app.exitApp) {
+      (navigator as any).app.exitApp();
+      return;
+    }
+
     // Browser
     try {
       window.close();
