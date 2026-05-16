@@ -23,6 +23,7 @@ Programación siguiendo el guión.
 Programación siguiendo el guión, uso de IA alguna duda para problemas de imports o con el standalone.
 ## Taller 3
 ### Antonio
+Seguir el guión, preguntas a IA para ayuda con errores e imports y para contraseña en el formulario.
 ## Taller 4
 ### Sergio
 Serguir el guion y buscar algunos cambios. Por ejemplo cambiar a capacitor. Ademas de creacion de apk con icono y nombre.  
