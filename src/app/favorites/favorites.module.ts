@@ -7,6 +7,9 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { favoritesPageRoutingModule } from './favorites-routing.module';
 
+import { Storage as IonicStorage} from '@ionic/storage-angular';
+import { Storage as StorageService } from '../services/storage';
+
 @NgModule({
   imports: [
     IonicModule,
@@ -14,6 +17,10 @@ import { favoritesPageRoutingModule } from './favorites-routing.module';
     FormsModule,
     ExploreContainerComponentModule,
     favoritesPageRoutingModule
+  ],
+  providers: [
+    StorageService, 
+    IonicStorage 
   ],
   declarations: [favoritesPage]
 })

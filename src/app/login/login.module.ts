@@ -10,6 +10,8 @@ import { LoginPage } from './login.page';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { MenuController } from '@ionic/angular';
+
 
 @NgModule({
   imports: [
@@ -21,4 +23,12 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   declarations: [LoginPage]
 })
-export class LoginPageModule {}
+export class LoginPageModule {
+  constructor(private MenuController: MenuController) {
+  }
+
+  ionViewWillEnter() {
+    this.MenuController.enable(false, 'principal');
+  }
+
+}

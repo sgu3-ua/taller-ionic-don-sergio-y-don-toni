@@ -7,7 +7,14 @@ import { ToastController } from '@ionic/angular';
   standalone: false,
 })
 export class AppComponent implements OnInit {
-  constructor(private toastController: ToastController) {}
+
+  readonly menuFile: string = "../assets/data/menu.json";
+  menuOptions: any[] = [];
+
+
+  constructor(private toastController: ToastController) {
+    this.presentWelcomeToast
+  }
 
   async presentWelcomeToast() {
     const toast = await this.toastController.create({
@@ -19,7 +26,16 @@ export class AppComponent implements OnInit {
     await toast.present();
   }
   ngOnInit() {
-    this.presentWelcomeToast();
+    this.getMenu();
+  }
+
+  getMenu() {
+    fetch(this.menuFile)
+      .then(response => response.json())
+      .then(data => {
+        this.menuOptions = data;
+        console.log("Menu options loaded:", this.menuOptions);
+      });
   }
 
 }

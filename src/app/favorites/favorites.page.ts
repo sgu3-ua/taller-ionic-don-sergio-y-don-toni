@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Storage as StorageService } from '../services/storage';
 
 @Component({
   selector: 'app-favorites',
@@ -8,5 +9,5 @@ import { Component, OnInit } from '@angular/core';
 })
 export class favoritesPage {
 
-  constructor() {}
+  constructor(private storage: StorageService) {}
 }
